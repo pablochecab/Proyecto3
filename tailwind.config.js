@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'header-background': "url('img/fondoHeader.jpg')"
+        'header-background': "url('img/fondoHeader.jpg')",
+        'footer-background': "url('img/FondoFooter.jpg')"
        },
 
       gridTemplateColumns: {
