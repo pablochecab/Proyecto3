@@ -11,25 +11,30 @@
 <body class="h-screen flex flex-col">
   <header class="border-2 border-b-gray-400">
     <section class="flex justify-between flex-wrap gap-4 p-4 w-full">
-      <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-4 m:flex-row m:items-center m:w-full m:justify-between">
         <article class="flex gap-2">
           <i class="bi bi-amd text-2xl"></i>
           <h1 class="text-2xl">Wiselek.id</h1>
         </article>
         <nav>
-          <i id="boton" class="bi bi-list mobile:inline laptop:hidden cursor-pointer"></i>
-          <ul id="menu" class="flex gap-8 flex-wrap mobile:hidden laptop:flex">
+          <i id="boton" class="bi bi-list t:inline hidden cursor-pointer t:text-2xl"></i>
+          <ul id="menu" class="flex gap-8 flex-wrap t:hidden">
             <li><a href="#">Home</a></li>
             <li><a href="#">Properties</a></li>
             <li><a href="#">Product</a></li>
             <li><a href="#">Market</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#">Contact</a>
+              <ul class="hidden t:inline">
+                <li>Main Street Plaza, Downtown Business District</li>
+                <li>+1 (555) 123-4567</li>
+              </ul>
+            </li>
             <li><a href="#">Find Agent</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="#">About Us</a></li>  
           </ul>
         </nav>
       </div>
-      <div class="flex flex-col justify-between gap-4">
+      <div class="flex flex-col justify-between gap-4 t:hidden">
         <article class="font-bold">
           <p>Main Street Plaza, Downtown Business District</p>
         </article>
@@ -38,15 +43,15 @@
         </article>
       </div>
     </section>
-    <section class="bg-header-background bg-cover object-cover flex flex-col gap-6 pl-16 pt-40 pb-24">
-      <p class="flex gap-2 text-2xl"><i class="bi bi-amd"></i>Wiselek.id</p>
-      <p class="text-6xl font-bold">A great agent makes all<br> the difference</p>
-      <p class="text-xl">A great agent makes all the difference by providing expert guidance and<br> personalized
+    <section class="bg-header-background bg-cover object-cover flex flex-col gap-6 pl-16 pt-40 pb-24 t:p-0">
+      <p class="flex gap-2 text-2xl t:hidden"><i class="bi bi-amd"></i>Wiselek.id</p>
+      <p class="text-6xl font-bold t:text-xl">A great agent makes all<br> the difference</p>
+      <p class="text-xl t:text-lg">A great agent makes all the difference by providing expert guidance and<br> personalized
         service for your needs</p>
-      <article class="flex items-center p-3 rounded-2xl border border-gray-400 max-w-max bg-white">
+      <article class=" flex items-center p-3 rounded-2xl border border-gray-400 max-w-max bg-white">
         <div class="border-r-2 pr-4">
           <p class="text-gray-500">City or zip code</p>
-          <p class="flex items-center text-xl gap-2"><i class="bi bi-geo-alt text-red-500"></i>Jombang IND</p>
+          <p class="flex items-center text-xl gap-2 t:text"><i class="bi bi-geo-alt text-red-500"></i>Jombang IND</p>
         </div>
         <div class="border-r-2 pl-4 pr-4">
           <p class="text-gray-500">Agent name</p>
@@ -69,7 +74,7 @@
       <h1 class="text-4xl font-bold">Selling your place?</h1>
       <p class="text-gray-500 text-xl pb-8">Selling your place? Get expert help to maximize<br> value and sell quickly!
       </p>
-      <div class="grid grid-cols-3 gap-6">
+      <div class="grid grid-cols-3 gap-6 t:grid-cols-1">
         <article class="card">
           <i class="bi bi-1-circle-fill text-2xl"></i>
           <img class="aspect-square h-full max-h-52 object-cover" src="img/Buscar.jpg" alt="Paso 1">
@@ -96,7 +101,7 @@
       <h1 class="text-4xl font-bold">Most recommended agents:</h1>
       <p class="text-gray-500 text-xl">Looking for the most recommended agents? Discover top-rated professionals who
         offer<br> exceptional service and expertise.</p>
-      <div id="agentes" class="grid desktop:grid-cols-2 grid-rows-3 gap-5 mobile:grid-cols-mobile-grid">
+      <div id="agentes" class="grid grid-cols-2 grid-rows-3 gap-5 t:grid-cols-1">
         <!-- AQUI VAN TODOS LOS AGENTES INMOBILIARIOS -->
       </div>
       <div class="flex justify-center gap-5">
@@ -113,9 +118,9 @@
     </section>
     <section class="flex flex-col gap-4 border-b-2 py-20">
       <p>Our Collection</p>
-      <h1 class="text-4xl font-bold pb-8">News & Article</h1>
-      <div class="flex justify-between items-center pb-8">
-        <article class="flex gap-2">
+      <h1 class="text-4xl font-bold pb-8 t:pb-0">News & Article</h1>
+      <div class="flex justify-between items-center pb-8 t:flex-col-reverse ">
+        <article class="flex gap-2 t:hidden">
           <button class="flex gap-2"><i class="bi bi-caret-left-square"></i></button>
           <p class="flex"><i class="bi bi-dash text-gray-500 text-l"></i><i class="bi bi-dash font-bold"></i><i
               class="bi bi-dash text-gray-500"></i><i class="bi bi-dash text-gray-500"></i></p>
@@ -126,7 +131,7 @@
             opportunities today.</p>
         </article>
       </div>
-      <div class="grid grid-cols-3 gap-5">
+      <div class="grid grid-cols-3 gap-5 t:grid-cols-1">
         <article class="flex flex-col gap-3">
           <img class="w-full h-full object-cover rounded-2xl max-h-56" src="img/Casa1.jpg"
             alt="Explore exclusive properties">
@@ -158,13 +163,13 @@
         </article>
       </div>
     </section>
-    <section class="py-20 flex gap-24">
+    <section class="py-20 flex gap-24 t:gap-10 t:flex-col">
       <article class="flex flex-col justify-between">
         <div class="flex flex-col gap-2">
           <h2 class="text-6xl">FAQs</h2>
           <p class="text-gray-500">Answers to your real estate questions<br> and concerns.</p>
         </div>
-        <div class="flex flex-col gap-2">
+        <div class="flex flex-col gap-2 t:hidden">
           <p class="font-bold text-xl">Your question is not solved yet?</p>
           <p class="text-gray-500">Don't worry, just click the button below to contact us.</p>
           <p class="text-white bg-black rounded-2xl px-6 py-1.5 max-w-max">Contact us</p>
@@ -184,30 +189,36 @@
         <p class="font-bold border-b-2 border-gray-500 flex justify-between p-3">How do I find the right agent?<i
             class="bi bi-chevron-down font-bold"></i></p>
       </article>
+      <!-- ARTICLE ESPECÍFICO PARA MÓVIL -->
+      <article class="flex-col gap-2 hidden t:flex">
+        <p class="font-bold text-xl">Your question is not solved yet?</p>
+        <p class="text-gray-500">Don't worry, just click the button below to contact us.</p>
+        <p class="text-white bg-black rounded-2xl px-6 py-1.5 max-w-max">Contact us</p>
+      </article>
     </section>
   </main>
-  <footer class="bg-footer-background bg-cover object-fit p-20 flex-wrap">
-    <section class="bg-white rounded-xl p-14 flex justify-between flex-wrap">
-      <article class="flex flex-col gap-3">
+  <footer class="bg-footer-background bg-cover object-fit p-20 flex-wrap t:p-10">
+    <section class="bg-white rounded-xl p-14 flex justify-between flex-wrap t:gap-8 t:flex-col t:p-5">
+      <article class="flex flex-col gap-3 t:text-center">
         <h1 class="text-4xl font-bold">Wiselek.id</h1>
         <p class="text-gray-500">Experience workspaces designed for productivity, featuring<br> modern Experience
           workspaces designed for productivity,<br> featuring modern.</p>
       </article>
-      <article class="flex gap-16 flex-wrap">
-        <div class="flex flex-col gap-3">
+      <article class="flex gap-16 t:gap-0 flex-wrap t:flex-col t:items-center t:text-center">
+        <div class="flex flex-col gap-3 t:gap-0">
           <p class="text-lg font-bold">Adress</p>
           <p class="text-gray-500">Man Street Plaza, Downton<br>- Business District</p>
         </div>
-        <div class="flex flex-col gap-3">
+        <div class="flex flex-col gap-3 t:gap-0">
           <p class="text-lg font-bold">Contact</p>
           <p class="text-gray-500">Hello&Thumbsapp<br>+1 (345) 123-4567</p>
         </div>
       </article>
     </section>
-    <section class="flex justify-between text-white py-14 flex-wrap">
+    <section class="flex justify-between text-white py-14 flex-wrap t:flex-col">
       <article>
-        <p class="pb-6 text-2xl font-bold">Quickmenu</p>
-        <ul class="flex gap-8 text-xl flex-wrap">
+        <p class="pb-6 text-2xl font-bold t:text-center">Quickmenu</p>
+        <ul class="flex gap-8 text-xl flex-wrap t:flex t:justify-between">
           <li>Home</li>
           <li>Properties</li>
           <li>Product</li>
@@ -216,13 +227,13 @@
           <li>About Us</li>
         </ul>
       </article>
-      <article class="flex flex-col">
+      <article class="flex flex-col t:items-center t:pt-10">
         <p class=" text-white text-2xl font-bold pb-6">Subscribe newsletter</p>
-        <form class="flex p" action="POST">
+        <form class="flex p t:flex-col t:items-center" action="POST">
           <label for=""></label>
           <input class="border-2 bg-transparent border-white text-white rounded-xl p-1" type="text"
             placeholder="Enter your email">
-          <p class="border-2 border-black rounded-xl p-1 bg-white text-black" type="submit">Subscribe</p>
+          <p class="t:mt-3 t:text-center t:max-w-fit border-2 border-black rounded-xl p-1 bg-white text-black" type="submit">Subscribe</p>
         </form>
       </article>
     </section>

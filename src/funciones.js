@@ -18,14 +18,14 @@ fetch('componentes/agentes.json')
     const agentCard = document.createElement('article');
 
     // Al ARTICLE, le añadimos estas clases:
-    agentCard.classList.add('flex-wrap', 'card', 'flex', 'gap-5', 'p-4', 'bg-white', 'rounded-lg', 'shadow-lg', 'my-4');
+    agentCard.classList.add('card', 'flex', 'gap-5', 'p-4', 'bg-white', 'rounded-lg', 'shadow-lg', 'my-4', 't:flex-wrap', 't:text-center', 't:items-center', 't:flex-col');
 
       // Añadir contenido HTML a la tarjeta del agente
       agentCard.innerHTML = `
-        <img class="aspect-square h-full mobile:w-full max-h-52 object-cover rounded-2xl" src="${agent.image}" alt="${agent.name}">
+        <img class="aspect-square h-full max-h-52 object-cover rounded-2xl" src="${agent.image}" alt="${agent.name}">
         <div class="flex flex-col justify-between">
-          <div class="flex flex-col gap-3">
-            <h2 class="text-2xl font-bold">${agent.name}</h2>
+          <div class="flex flex-col gap-3 t:text-center">
+            <h2 class="text-2xl font-bold t:text-center">${agent.name}</h2>
             <p class="text-gray-700">${agent.description}</p>
             <p class="text-gray-500 flex gap-2 items-center">
               <i class="bi bi-star-fill text-lime-400"></i>
