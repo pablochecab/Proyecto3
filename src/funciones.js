@@ -27,7 +27,7 @@ fetch('componentes/agentes.json')
           <div class="flex flex-col gap-3 t:text-center">
             <h2 class="text-2xl font-bold t:text-center">${agent.name}</h2>
             <p class="text-gray-700">${agent.description}</p>
-            <p class="text-gray-500 flex gap-2 items-center">
+            <p class="text-gray-500 flex gap-2 items-center justify-center">
               <i class="bi bi-star-fill text-lime-400"></i>
               <span class="text-black font-bold text-xl">${agent.rating}</span> (${agent.reviews} reviews)
             </p>
@@ -51,13 +51,20 @@ fetch('componentes/agentes.json')
 
 
 // MENÚ DESPLEGABLE: ---------------------------------------------------------------------------------------------------------------
-// Seleccionamos el botón hamburguesa y el menú
+
+// JavaScript para abrir y cerrar el menú con if y else
 const boton = document.getElementById("boton");
 const menu = document.getElementById("menu");
+const body = document.getElementById("body");
 
-// Añadimos un evento de clic al botón hamburguesa
-boton.addEventListener("click", () => {
-  // Alternamos la clase 'hidden' para mostrar/ocultar el menú
-  menu.classList.toggle("hidden");
+boton.addEventListener("click", function() {
+  // Verificar si el menú está oculto o visible
+  if (menu.style.display === "none" || menu.style.display === "") {
+    // Si está oculto, mostrarlo
+    menu.style.display = "block";
+    
+  } else {
+    // Si está visible, ocultarlo
+    menu.style.display = "none";
+  }
 });
-

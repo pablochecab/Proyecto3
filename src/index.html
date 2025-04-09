@@ -8,9 +8,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
-<body class="h-screen flex flex-col">
+<body id="body" class="h-screen flex flex-col">
   <header class="border-2 border-b-gray-400">
-    <section class="flex justify-between flex-wrap gap-4 p-4 w-full">
+    <section class="flex justify-between flex-wrap gap-4 p-4 w-full t:relative t:border-b-4">
       <div class="flex flex-col gap-4 m:flex-row m:items-center m:w-full m:justify-between">
         <article class="flex gap-2">
           <i class="bi bi-amd text-2xl"></i>
@@ -18,19 +18,14 @@
         </article>
         <nav>
           <i id="boton" class="bi bi-list t:inline hidden cursor-pointer t:text-2xl"></i>
-          <ul id="menu" class="flex gap-8 flex-wrap t:hidden">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Properties</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">Market</a></li>
-            <li><a href="#">Contact</a>
-              <ul class="hidden t:inline">
-                <li>Main Street Plaza, Downtown Business District</li>
-                <li>+1 (555) 123-4567</li>
-              </ul>
-            </li>
-            <li><a href="#">Find Agent</a></li>
-            <li><a href="#">About Us</a></li>  
+          <ul id="menu" class="bg-white flex gap-8 flex-wrap t:hidden t:absolute t:left-0 t:mt-5 t:w-full t:p-5">
+            <li class="border-b-2 border-black pb-2"><a href="#">Home</a></li>
+            <li class="border-b-2 pb-2 pt-2"><a href="#">Properties</a></li>
+            <li class="border-b-2 pb-2 pt-2"><a href="#">Product</a></li>
+            <li class="border-b-2 pb-2 pt-2"><a href="#">Market</a></li>
+            <li class="border-b-2 pb-2 pt-2"><a href="#">Contact</a></li>
+            <li class="border-b-2 pb-2 pt-2"><a href="#">Find Agent</a></li>
+            <li class="border-b-2 pb-2 pt-2"><a href="#">About Us</a></li>  
           </ul>
         </nav>
       </div>
@@ -42,13 +37,14 @@
           <p>+1 (555) 123-4567</p>
         </article>
       </div>
-    </section>
-    <section class="bg-header-background bg-cover object-cover flex flex-col gap-6 pl-16 pt-40 pb-24 t:p-0">
+    </section>    
+    <section class="bg-header-background bg-no-repeat bg-cover flex flex-col gap-6 pl-16 pt-40 pb-24 t:p-0 t:pt-40 t:pb-10 t:pl-5 t:bg-center">
       <p class="flex gap-2 text-2xl t:hidden"><i class="bi bi-amd"></i>Wiselek.id</p>
-      <p class="text-6xl font-bold t:text-xl">A great agent makes all<br> the difference</p>
-      <p class="text-xl t:text-lg">A great agent makes all the difference by providing expert guidance and<br> personalized
+      <p class="text-6xl font-bold t:text-2xl">A great agent makes all<br> the difference</p>
+      <p class="text-xl t:text-sm">A great agent makes all the difference by providing expert guidance and<br> personalized
         service for your needs</p>
-      <article class=" flex items-center p-3 rounded-2xl border border-gray-400 max-w-max bg-white">
+      <article class="flex items-center p-3 rounded-2xl border border-gray-400 max-w-max bg-white
+                      t:hidden">
         <div class="border-r-2 pr-4">
           <p class="text-gray-500">City or zip code</p>
           <p class="flex items-center text-xl gap-2 t:text"><i class="bi bi-geo-alt text-red-500"></i>Jombang IND</p>
