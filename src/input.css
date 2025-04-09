@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .card {
+        border: solid 2px #9ca3af;
+        padding: 1.5rem;
+        border-radius: 0.75rem;
+    }
+
+    .prueba {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+    }
+}

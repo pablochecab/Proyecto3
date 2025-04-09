@@ -1,0 +1,57 @@
+[
+    {
+      "name": "Kristin Watson",
+      "image": "img/Kristin.jfif",
+      "description": "Trusted real estate agent delivering exceptional results and personalized service",
+      "rating": 4.9,
+      "reviews": 120,
+      "price_range": "$20K - $285K",
+      "sales_last_12_months": 16
+    },
+    {
+      "name": "Ronald Richards",
+      "image": "img/Ronald.avif",
+      "description": "Expert real estate agent providing expert guidance and exceptional results",
+      "rating": 4.8,
+      "reviews": 95,
+      "price_range": "$30K - $350K",
+      "sales_last_12_months": 20
+    },
+    {
+      "name": "Jerome Bel",
+      "image": "img/Jerome.jpg",
+      "description": "Trusted real estate agent with years of experience in the market",
+      "rating": 4.7,
+      "reviews": 110,
+      "price_range": "$25K - $300K",
+      "sales_last_12_months": 18
+    },
+    {
+      "name": "Kathryn Murphy",
+      "image": "img/Kathrym.jfif",
+      "description": "Experienced agent known for her professionalism and dedication",
+      "rating": 4.6,
+      "reviews": 80,
+      "price_range": "$15K - $275K",
+      "sales_last_12_months": 12
+    },
+    {
+      "name": "Jerry Wilson",
+      "image": "img/Jenny.jpg",
+      "description": "Reliable agent offering top-tier service and expert market knowledge",
+      "rating": 4.9,
+      "reviews": 130,
+      "price_range": "$40K - $500K",
+      "sales_last_12_months": 22
+    },
+    {
+      "name": "Savannah Nguyen",
+      "image": "img/Savannah.jpg",
+      "description": "Highly recommended agent who goes above and beyond for her clients",
+      "rating": 4.8,
+      "reviews": 100,
+      "price_range": "$50K - $450K",
+      "sales_last_12_months": 25
+    }
+  ]
+  
